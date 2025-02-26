@@ -1,7 +1,7 @@
 environment:
-  name: test
-  project: cdf-bootcamp-22-test # ex. cdf-bootcamp-01-test
-  type: test # prod, staging, dev, test, qa
+  name: prod
+  project: cdf-bootcamp-22-prod # ex. cdf-bootcamp-01-test
+  type: prod # prod, staging, dev, test, qa
   selected:
   - modules/bootcamp/data_foundation
   - modules/bootcamp/ice_cream_api
@@ -10,7 +10,7 @@ environment:
 variables:
   modules:
     bootcamp:
-      CDF_PROJECT: cdf-bootcamp-22-test # ex. cdf-bootcamp-01-test
+      CDF_PROJECT: cdf-bootcamp-22-prod # ex. cdf-bootcamp-01-test
       IDP_CLIENT_ID: ${IDP_CLIENT_ID} # replaced by .env
       IDP_CLIENT_SECRET: ${IDP_CLIENT_SECRET} # replaced by .env
       IDP_TENANT_ID: ${IDP_TENANT_ID} # replaced by .env
@@ -20,10 +20,10 @@ variables:
 
       # Groups
       # OBJECT ID FOR test/prod Groups
-      data_developer_source_id: 6204e9c7-1f08-4e10-9d1b-87e94062c5db # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
-      data_pipeline_oee_source_id: a0c04fc3-b801-4670-b071-c33ec32cfefd # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
-      readwrite_source_id: aacf0bdf-d7f6-4e73-b1f4-43729bade0a1  # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
-      icapi_extractors_source_id: 5d468296-eca9-4162-a94b-6885c0cafd95 # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
+      data_developer_source_id: 6fb6fadf-5192-44a8-9543-e946372d15aa # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
+      data_pipeline_oee_source_id: ac527dad-ed71-4831-af53-4537c6b69f98 # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
+      readwrite_source_id: c83ffebb-8995-4c9d-8860-2ea2942e155e  # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
+      icapi_extractors_source_id: bd37466a-5b33-4eb7-84df-1b985123d18a # ex. xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx
 
       # Client Ids (App registrations or Service Principals)
       data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID} # replaced by .env
